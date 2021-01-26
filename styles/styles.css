@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif; */
+
+.container {
+  max-width: 1280px;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+}
+.margin-left {
+  margin-left: 93px;
+}
+.h2-white {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+.h2-black {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #060a24;
+  letter-spacing: 0;
+}
+/*Header Section Styles*/
+.header {
+  background-color: white;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header a {
+  color: #060a24;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.header a:hover {
+  color: #00f3bb;
+  text-decoration: line-through;
+}
+.header a:active {
+  color: rgba(6, 10, 36, 0.56);
+  text-decoration: line-through;
+}
+.menu {
+  height: inherit;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 24px;
+}
+.burger-button {
+  width: 40px;
+  height: 40px;
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  right: 5px;
+  top: 10px;
+  font-size: 21px;
+  color: black;
+}
+#navi-toggle {
+  display: none;
+}
+/*End Header Section Styles*/
+
+/*Intro Section Styles*/
+.introSection {
+  margin-top: 120px;
+}
+h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  color: #060a24;
+  letter-spacing: 0;
+}
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+button {
+  background: #00f3bb;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  color: #060a24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+  border: none;
+  padding: 16px 59px;
+  text-transform: uppercase;
+}
+button:hover {
+  background: #00f0b8;
+  background: -moz-linear-gradient(left, #00f0b8 0%, #0000fe 100%);
+  background: -webkit-linear-gradient(left, #00f0b8 0%, #0000fe 100%);
+  background: linear-gradient(to right, #00f0b8 0%, #0000fe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0b8', endColorstr='#0000fe',GradientType=1 );
+  color: white;
+}
+.introSectionText {
+  width: 70%;
+}
+.text-width {
+  width: 70%;
+  margin-bottom: 56px;
+}
+.text-line {
+  text-decoration: line-through;
+}
+.dot {
+  color: #0000ec;
+}
+/*End Intro Section Styles*/
+
+/*Episodios Section Styles*/
+.episodioSection {
+  clip-path: polygon(0 15%, 100% 5%, 100% 80%, 0% 94%);
+  background: #0000a3;
+  background: -moz-linear-gradient(left, #0000a3 0%, #0000ff 100%);
+  background: -webkit-linear-gradient(left, #0000a3 0%, #0000ff 100%);
+  background: linear-gradient(to right, #0000a3 0%, #0000ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000a3', endColorstr='#0000ff',GradientType=1 );
+  position: relative;
+  height: 1175.6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-container {
+  display: inherit;
+  flex-wrap: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  margin-top: 26px;
+  margin-bottom: 100px;
+}
+.episode {
+  width: 48%;
+}
+.episode:first-child {
+  margin-bottom: 72px;
+}
+.episode:nth-child(2) {
+  margin-bottom: 72px;
+}
+/*End Episodios Section Styles*/
+
+/* De donde venimos Section Style*/
+.deDondeVenimosSection {
+  position: absolute;
+  top: 1160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+.image-container {
+  width: 35%;
+}
+.text-container {
+  width: 44%;
+}
+/* End De donde venimos Section Style*/
+
+/*Invitadas Section Styles*/
+.invitadaSection {
+  margin-top: 600px;
+}
+.photo-container {
+  margin: 36px auto 64px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.photo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invitadas-img {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+}
+/*End Invitadas Section Styles*/
+
+/*Temas Section Styles*/
+.temaSection {
+  margin-bottom: 34px;
+}
+.temas-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 56px;
+}
+h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #060a24;
+  letter-spacing: 0;
+  text-align: center;
+}
+.tema {
+  display: inherit;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+}
+.tema img {
+  margin-bottom: 29px;
+}
+/*End Temas Section Styles*/
+
+/* Call to action Section Styles*/
+.calltoactionSection {
+  clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+  background: #0000a3;
+  background: -moz-linear-gradient(left, #0000a3 0%, #0000ff 100%);
+  background: -webkit-linear-gradient(left, #0000a3 0%, #0000ff 100%);
+  background: linear-gradient(to right, #0000a3 0%, #0000ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000a3', endColorstr='#0000ff',GradientType=1 );
+}
+.call-container {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  height: 518px;
+}
+.call-container h2 {
+  margin-bottom: 36px;
+}
+/* End Call to action Section Styles*/
+
+/*Footer Section Styles*/
+.footer {
+  margin: 36px 0px 31px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.logos-container i {
+  margin-right: 36px;
+  font-size: 18px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.logos-container i:last-child {
+  margin-right: 0;
+}
+/*End Footer Section Styles*/
+@media only screen and (max-width: 1052px) {
+  .deDondeVenimosSection {
+    top: 1283px;
+  }
+}
+/*Media Query from Tablet*/
+@media only screen and (max-width: 1023px) {
+  .container {
+    padding: 0 1em;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .margin-left {
+    margin-left: 0;
+  }
+  .introSection {
+    margin-top: 35px;
+  }
+  .introSectionText {
+    width: 100%;
+  }
+  .text-width {
+    width: 100%;
+  }
+  .episodioSection {
+    clip-path: polygon(0 6%, 100% 0%, 100% 92%, 0% 100%);
+    justify-content: center;
+    padding-top: 117px;
+    height: 1326px;
+    display: block;
+  }
+  .flex-container {
+    flex-direction: column;
+    margin-bottom: 135px;
+  }
+  .episode {
+    width: 100%;
+  }
+  .episode:first-child {
+    margin-bottom: 0px;
+  }
+  .episode:nth-child(2) {
+    margin-bottom: 0px;
+  }
+  .deDondeVenimosSection {
+    display: block;
+    top: 1426px;
+    margin-top: 116px;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .text-container {
+    width: 100%;
+  }
+  .invitadaSection {
+    margin-top: 829px;
+  }
+  .image-container img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .photo-row {
+    display: block;
+    width: 100%;
+  }
+  .invitadas-img{
+    width: 100%;
+  }
+  .temas-container {
+    display: block;
+  }
+  .tema {
+    display: block;
+    margin: 0 auto 36px;
+    width: 30%;
+  }
+  .tema img {
+    margin: 0 auto 29px;
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .introSection {
+    margin-top: 70px;
+  }
+  .burger-button {
+    display: block;
+  }
+  .header {
+    display: block;
+    height: auto;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 4;
+  }
+  .header ol {
+    display: block;
+  }
+  .header ol li {
+    height: 50px;
+  }
+  .header a {
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 16px 0;
+  }
+  input:checked ~ .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 3;
+    background: #0000ec;
+    width: 100vw;
+    left: 0;
+  }
+  input:checked ~ .navigation-button{
+    display: none;
+  }
+  input:checked ~ .navigation-close{
+    display: block;
+  }
+  input:not(:checked) ~ .menu {
+    display: none;
+  }
+  input:not(:checked) ~ .navigation-button{
+    display: block;
+  }
+  input:not(:checked) ~ .navigation-close{
+    display: none;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .text-width {
+    margin-bottom: 36px;
+  }
+  .introSectionText button {
+    width: 100%;
+  }
+  .episodioSection {
+    clip-path: polygon(0 6%, 100% 3%, 100% 92%, 0% 100%);
+  }
+  .h2-white,
+  .h2-black {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .episode {
+    margin-bottom: 11px;
+  }
+  .episode:first-child {
+    margin-bottom: 11px;
+  }
+  .episode:nth-child(2) {
+    margin-bottom: 11px;
+  }
+  .image-container img {
+    width: 100%;
+  }
+  .invitadaSection {
+    margin-top: 788px;
+  }
+  .tema {
+    width: 90%;
+  }
+  .calltoactionSection {
+    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .call-container h2 {
+    text-align: center;
+  }
+  .footer-container {
+    display: block;
+    text-align: center;
+  }
+  .footer-container p {
+    margin-bottom: 16px;
+  }
+}

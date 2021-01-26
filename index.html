@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello blue pale dot</title>
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <figure class="logo">
+        <img src="images/logo.svg" height="36" alt="Logo de Hello blue pale dot" />
+      </figure>
+      <input type="checkbox" id="navi-toggle" class="navigation-checkbox" />
+      <label for="navi-toggle" class="navigation-button">
+        <i class="icon-menu burger-button fas fa-bars" id="burger-menu"></i>
+      </label>
+      <label for="navi-toggle" class="navigation-close">
+        <i class="icon-menu burger-button fas fa-times" id="burger-menu"></i>
+      </label>
+      <nav class="menu">
+        <ol>
+          <li>
+            <a class="link" href="#episodios">Episodios</a>
+          </li>
+          <li>
+            <a class="link" href="#nosotros">Nosotros</a>
+          </li>
+          <li>
+            <a class="link" href="#entrevistas">Entrevistas</a>
+          </li>
+          <li>
+            <a class="link" href="#temas">Temas</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <section class="introSection">
+    <div class="container">
+      <div class="introSectionText margin-left">
+        <h1>Hello <span class="text-line">world</span> pale blue dot<span class="dot">.</span></h1>
+        <p class="text-width">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
+          episodios, todos los
+          jueves cada 15 días.</p>
+        <button>Conocé más</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="episodios" class="episodioSection">
+    <div class="container">
+      <h2 class="h2-white margin-left">Episodios</h2>
+      <div class="flex-container">
+        <div class="episode">
+          <iframe src="https://open.spotify.com/embed-podcast/show/24aqN472kMGKAhdJbIK59L" width="100%" height="232"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="episode">
+          <iframe src="https://open.spotify.com/embed-podcast/show/3yU4ZfrixjrEKfx4JhAlWE" width="100%" height="232"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="episode">
+          <iframe src="https://open.spotify.com/embed-podcast/show/6SZkj9tv4CA5SC681NDn2n" width="100%" height="232"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="episode">
+          <iframe src="https://open.spotify.com/embed-podcast/show/052EJ0rl7gqQDCRFvFc7eY" width="100%" height="232"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="deDondeVenimosSection">
+    <div class="container">
+      <div class="image-container">
+        <img src="images/phone.png" width="457" alt="Phone Image">
+      </div>
+      <div class="text-container">
+        <h2 class="h2-black">De dónde venimos</h2>
+        <p>
+          Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+          Universe, are challenged by this point of pale light.</p>
+        <p>
+          Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
+          there is no hint that help will come from elsewhere to save us from ourselves.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="entrevistas" class="invitadaSection">
+    <div class="container">
+      <h2 class="h2-black margin-left">Invitadas/os estelares</h2>
+    </div>
+    <div class="photo-container">
+      <div class="photo-row">
+        <img class="invitadas-img" src="images/photo-1.png" alt="Grace Hopper">
+        <img class="invitadas-img" src="images/photo-2.png" alt="Katie Bouman">
+        <img class="invitadas-img" src="images/photo-3.png" alt="Margaret Hamilton">
+      </div>
+      <div class="photo-row">
+        <img class="invitadas-img" src="images/photo-4.png" alt="E.R.A. Univac 1103">
+        <img class="invitadas-img" src="images/photo-5.png" alt="Computer Operators">
+        <img class="invitadas-img" src="images/photo-6.png" alt="Susan Kare">
+      </div>
+    </div>
+  </section>
+
+  <section id="temas" class="temaSection">
+    <div class="container">
+      <h2 class="h2-black margin-left">Algunos de nuestros temas</h2>
+      <div class="temas-container">
+        <div class="tema">
+          <img src="images/icon1.svg" alt="Server icon">
+          <h3>Trabajo remoto</h3>
+        </div>
+        <div class="tema">
+          <img src="images/icon2.svg" alt="Brain icon">
+          <h3>Repensando la programación</h3>
+        </div>
+        <div class="tema">
+          <img src="images/icon3.svg" alt="Computer icon">
+          <h3>Bases del código</h3>
+        </div>
+        <div class="tema">
+          <img src="images/icon4.svg" alt="DB icon">
+          <h3>Seguridad informática</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calltoactionSection">
+    <div class="container">
+      <div class="call-container">
+        <h2 class="h2-white">¿Querés las últimas novedades?</h2>
+        <button>Escuchá los episodios</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <p>© 2019— Hello blue pale dot</p>
+        <div class="logos-container">
+          <i class="fab fa-spotify"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-telegram"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
