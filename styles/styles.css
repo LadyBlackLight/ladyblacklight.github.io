@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+/* font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* font-family: 'IBM Plex Mono', monospace;
-font-family: 'IBM Plex Sans', sans-serif; */
 
 .container {
   max-width: 1280px;
@@ -81,7 +83,7 @@ ul {
   height: inherit;
   padding: 0 24px;
 }
-.burger-button {
+.container-burger {
   width: 40px;
   height: 40px;
   display: none;
@@ -91,8 +93,7 @@ ul {
   z-index: 4;
   right: 5px;
   top: 10px;
-  font-size: 21px;
-  color: black;
+  cursor: pointer;
 }
 #navi-toggle {
   display: none;
@@ -290,14 +291,14 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
-.logos-container i {
+.logos-container a i {
   margin-right: 36px;
   font-size: 18px;
   color: #060a24;
   letter-spacing: 0;
   line-height: 28px;
 }
-.logos-container i:last-child {
+.logos-container a:last-child i {
   margin-right: 0;
 }
 /*End Footer Section Styles*/
@@ -369,7 +370,7 @@ h3 {
     display: block;
     width: 100%;
   }
-  .invitadas-img{
+  .invitadas-img {
     width: 100%;
   }
   .temas-container {
@@ -385,11 +386,11 @@ h3 {
     display: block;
   }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .introSection {
     margin-top: 70px;
   }
-  .burger-button {
+  .container-burger {
     display: block;
   }
   .header {
@@ -409,35 +410,59 @@ h3 {
   }
   .header a {
     height: 40px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     margin: 16px 0;
   }
+  .linea {
+    background-color: black;
+    height: 10%;
+    width: 75%;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .linea-top {
+    top: 25%;
+  }
+
+  .linea-low {
+    top: 75%;
+  }
+
+  .navigation-checkbox:checked + .label-burger .container-burger .linea-med {
+    opacity: 0;
+  }
+
+  .navigation-checkbox:checked + .label-burger .container-burger .linea-top {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .navigation-checkbox:checked + .label-burger .container-burger .linea-low {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+  }
+
   input:checked ~ .menu {
+    left: 0;
+    background: #0000ec;
+    position: fixed;
+    width: 100vw;
+    transition: 0.3s;
+  }
+  input:not(:checked) ~ .menu {
+    left: -100vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     transition: 0.3s;
     position: fixed;
     z-index: 3;
-    background: #0000ec;
-    width: 100vw;
-    left: 0;
-  }
-  input:checked ~ .navigation-button{
-    display: none;
-  }
-  input:checked ~ .navigation-close{
-    display: block;
-  }
-  input:not(:checked) ~ .menu {
-    display: none;
-  }
-  input:not(:checked) ~ .navigation-button{
-    display: block;
-  }
-  input:not(:checked) ~ .navigation-close{
-    display: none;
   }
   h1 {
     font-size: 36px;
