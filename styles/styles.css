@@ -226,6 +226,7 @@ button:hover {
   width: 33.33%;
   height: 100%;
   object-fit: cover;
+  margin-bottom: -2px;
 }
 /*End Invitadas Section Styles*/
 
@@ -372,6 +373,7 @@ h3 {
   }
   .invitadas-img {
     width: 100%;
+    margin-top: -6px;
   }
   .temas-container {
     display: block;
@@ -409,7 +411,7 @@ h3 {
     height: 50px;
   }
   .header a {
-    height: 40px;
+    height: 50px;
     color: #ffffff;
     font-size: 16px;
     margin: 16px 0;
