@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap");
 
 /* font-family: 'IBM Plex Mono', monospace;
 font-family: 'IBM Plex Sans', sans-serif; */
@@ -27,6 +27,7 @@ font-family: 'IBM Plex Sans', sans-serif; */
   font-size: 48px;
   color: #ffffff;
   letter-spacing: 0;
+  text-align: center;
 }
 .h2-black {
   font-family: "IBM Plex Sans", sans-serif;
@@ -162,7 +163,7 @@ button:hover {
   background: linear-gradient(to right, #0000a3 0%, #0000ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000a3', endColorstr='#0000ff',GradientType=1 );
   position: relative;
-  height: 1175.6px;
+  height: 1151.6px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -308,89 +309,21 @@ h3 {
     top: 1283px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 972px;
+  }
+  h1 {
+    font-size: 58px;
+  }
+  .deDondeVenimosSection {
+    top: 1189px;
+  }
+}
 /*Media Query from Tablet*/
 @media only screen and (max-width: 1023px) {
   .container {
     padding: 0 1em;
-  }
-  h1 {
-    font-size: 60px;
-  }
-  .margin-left {
-    margin-left: 0;
-  }
-  .introSection {
-    margin-top: 35px;
-  }
-  .introSectionText {
-    width: 100%;
-  }
-  .text-width {
-    width: 100%;
-  }
-  .episodioSection {
-    clip-path: polygon(0 6%, 100% 0%, 100% 92%, 0% 100%);
-    justify-content: center;
-    padding-top: 117px;
-    height: 1326px;
-    display: block;
-  }
-  .flex-container {
-    flex-direction: column;
-    margin-bottom: 135px;
-  }
-  .episode {
-    width: 100%;
-  }
-  .episode:first-child {
-    margin-bottom: 0px;
-  }
-  .episode:nth-child(2) {
-    margin-bottom: 0px;
-  }
-  .deDondeVenimosSection {
-    display: block;
-    top: 1426px;
-    margin-top: 116px;
-  }
-  .image-container {
-    width: 100%;
-  }
-  .text-container {
-    width: 100%;
-  }
-  .invitadaSection {
-    margin-top: 829px;
-  }
-  .image-container img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-  }
-  .photo-row {
-    display: block;
-    width: 100%;
-  }
-  .invitadas-img {
-    width: 100%;
-    margin-top: -6px;
-  }
-  .temas-container {
-    display: block;
-  }
-  .tema {
-    display: block;
-    margin: 0 auto 36px;
-    width: 30%;
-  }
-  .tema img {
-    margin: 0 auto 29px;
-    display: block;
-  }
-}
-@media screen and (max-width: 767px) {
-  .introSection {
-    margin-top: 70px;
   }
   .container-burger {
     display: block;
@@ -467,6 +400,115 @@ h3 {
     z-index: 3;
   }
   h1 {
+    font-size: 40px;
+  }
+  .text-width {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+  .introSectionText button {
+    width: 100%;
+  }
+  .deDondeVenimosSection {
+    display: block;
+    top: 1067px;
+}
+.image-container {
+  width: 100%;
+}
+.image-container img{
+  margin: 0 auto;
+  display: block;
+}
+.text-container {
+  width: 100%;
+}
+.invitadaSection {
+  margin-top: 735px;
+}
+.margin-left {
+  margin-left: auto;
+  margin-right: auto;
+}
+.episodioSection {
+  clip-path: polygon(0 15%, 100% 11%, 100% 80%, 0% 86%);
+  height: 1151.6px;
+}
+.calltoactionSection {
+  clip-path: polygon(0 10%, 100% 0, 101% 100%, 0% 100%);
+}
+.tema {
+  width: 35%;
+}
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 60px;
+  }
+  .introSection {
+    margin-top: 35px;
+  }
+  .introSectionText {
+    width: 100%;
+  }
+  .episodioSection {
+    clip-path: polygon(0 6%, 100% 0%, 100% 92%, 0% 100%);
+    justify-content: center;
+    padding-top: 117px;
+    height: 1326px;
+    display: block;
+  }
+  .flex-container {
+    flex-direction: column;
+    margin-bottom: 135px;
+  }
+  .episode {
+    width: 100%;
+  }
+  .episode:first-child {
+    margin-bottom: 0px;
+  }
+  .episode:nth-child(2) {
+    margin-bottom: 0px;
+  }
+  .deDondeVenimosSection {
+    top: 1426px;
+    margin-top: 116px;
+  }
+  .invitadaSection {
+    margin-top: 829px;
+  }
+  .image-container img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .photo-row {
+    display: block;
+    width: 100%;
+  }
+  .invitadas-img {
+    width: 100%;
+    margin-top: -6px;
+  }
+  .temas-container {
+    display: block;
+  }
+  .tema {
+    display: block;
+    margin: 0 auto 36px;
+    width: 30%;
+  }
+  .tema img {
+    margin: 0 auto 29px;
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .introSection {
+    margin-top: 70px;
+  }
+  h1 {
     font-size: 36px;
   }
   p {
@@ -474,9 +516,6 @@ h3 {
   }
   .text-width {
     margin-bottom: 36px;
-  }
-  .introSectionText button {
-    width: 100%;
   }
   .episodioSection {
     clip-path: polygon(0 6%, 100% 3%, 100% 92%, 0% 100%);
@@ -499,7 +538,7 @@ h3 {
     width: 100%;
   }
   .invitadaSection {
-    margin-top: 788px;
+    margin-top: 1060px;
   }
   .tema {
     width: 90%;
@@ -516,5 +555,15 @@ h3 {
   }
   .footer-container p {
     margin-bottom: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .invitadaSection {
+    margin-top: 822px;
+  }
+}
+@media (max-width: 375px) {
+  .invitadaSection {
+    margin-top: 740px;
   }
 }
